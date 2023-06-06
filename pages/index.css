@@ -11,9 +11,10 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
+  border: solid red 1px;
 }
 
 .header {
@@ -112,7 +113,7 @@
 
 .photo-main-page {
   position: absolute;
-  top: 14px;
+  top: 20px;
   right: -25px;
   z-index: -10;
   width: 764px;
@@ -161,7 +162,7 @@
   position: absolute;
   width: 115px;
   height: 115px;
-  left: 1099px;
+  right: -14px;
   top: 14px;
   background: #FFC700;
   border-radius: 50%;
@@ -173,7 +174,7 @@
   position: absolute;
   width: 68px;
   height: 68px;
-  left: 1157px;
+  right: -25px;
   top: 97px;
   background: #E9081D;
   border-radius: 50%;
@@ -203,16 +204,36 @@
 }
 
 .footer {
-  height: 188px;
+  min-height: 188px;
   background: #001489;
   margin-top: 63px;
 }
-
-.footer__links {
-  list-style-type: none;
-}
-
-.footer__nav {
+.footer__nav{
   display: flex;
   flex-direction: row;
+}
+.footer-links{
+  display: flex;
+  flex-direction: row;
+}
+.footer__links-logo{
+  list-style-type: none;
+}
+.footer__links2, .footer__links3, .footer__links4, .footer__links5, .footer__link-icons{
+  list-style-type: none;
+}
+.footer__link1{
+    color: white;
+    text-decoration: none;
+}
+.footer__link2{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+.footer__link-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50px;
 }
